@@ -1,0 +1,10 @@
+import pandas as pd
+user=pd.read_table('http://bit.ly/chiporders')
+#default separation is tab separated
+user.head()
+user_col=['userid','age','gender','occupation','zipcode']
+user=pd.read_table('http://bit.ly/movieusers',sep='|',header=None,name=user_col)
+user.head()
+
+
+
